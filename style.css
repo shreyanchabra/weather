@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container{
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.search-box{
+    max-width: 100%;
+    width: 500px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input, button{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: rgb(207, 241, 241);
+}
+input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 10px 10px 20px;
+    margin-right: 20px;
+    text-transform: capitalize ;
+}
+button{
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 12px;
+}
+button:hover{
+    color: white;
+    background: rgb(167, 166, 166);
+}
+input::placeholder{
+    color: black;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.image img{
+    width: 100%;
+    height: 200px;
+}
+.weather-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.weather-value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.temperature{
+    font-weight: 800;
+    font-size: 45px;
+}
+.description{
+    font-weight: 700;
+    font-size: 25px;
+}
+.weather-details{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.humidity, .wind-speed{
+    margin: 10px 45px 20px 45px;
+    display: flex;
+}
+.weather-details i{
+    font-size: 40px;
+    padding-right: 10px;
+}
+.value{
+    font-weight: bold;
+    font-size: 20px;
+}
+.error{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.text{
+    font-size: 20px;
+}
+.error img{
+    margin: 20px 0 10px 0;
+}

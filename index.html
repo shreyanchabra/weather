@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter the location" id="input">
+            <button class="fa-solid fa-magnifying-glass" id="button"></button>
+        </div>
+        <div class="weather-box" id="weather-box">
+            <div class="image"><img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather" id="image"></div>
+            <div class="weather-value">
+                <div class="temperature" id="temperature">0°C</div>
+                <div class="description" id="description">Rain</div>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="box">
+                        <div class="value" id="humidity-value">45%</div>
+                        <div class="name">Humidity</div>
+                    </div>
+                </div>
+                <div class="wind-speed">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="box">
+                        <div class="value" id="wind-speed-value">45 km/h</div>
+                        <div class="name">Wind Speed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="error" id="error">
+            <div class="text">Sorry, Location Not Found</div>
+            <img src="404.png" alt="">
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/eefc2ccc04.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
